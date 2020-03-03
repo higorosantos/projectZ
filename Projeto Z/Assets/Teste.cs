@@ -14,20 +14,5 @@ public class Teste : MonoBehaviour
     }
 
     // Update is called once per frame
-     void OnTriggerEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("inicio"))
-        {
-            Debug.Log("ok");
-            cubo.transform.Translate(new Vector3(0.08f, 0, 0));
-        }
-        if (collision.gameObject.CompareTag("fim"))
-        {
-            cubo.transform.Translate(new Vector3(-0.08f, 0, 0));
-        }
-    }
-    void Update()
-    {
-        cubo.transform.Translate(new Vector3(-0.08f,0,0));
-    }
+     
 }
